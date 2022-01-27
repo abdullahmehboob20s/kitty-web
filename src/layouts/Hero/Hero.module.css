@@ -1,0 +1,41 @@
+.container {
+  background-color: #83fec1;
+}
+.wrapper {
+  height: 100vh;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+
+.content {
+  max-width: 609px;
+}
+
+.hero_kitty {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns > button {
+  padding: 1.2rem 40px;
+  display: flex;
+  align-items: center;
+}
+
+.btns > button > span {
+  margin-right: 0.8rem;
+}
+
+.btns > button:not(:last-child) {
+  margin-right: 30px;
+}
