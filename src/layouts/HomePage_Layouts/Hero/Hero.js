@@ -3,8 +3,11 @@ import styles from "./Hero.module.css";
 import { FaDiscord } from "react-icons/fa";
 import hero_kitty from "assets/images/hero-kitty.png";
 import { Link } from "react-router-dom";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function Hero() {
+  const isBellow1000 = useMediaQuery("(max-width:1000px)");
+
   return (
     <div className={styles.container}>
       <div className="container-wrapper">
@@ -25,7 +28,7 @@ function Hero() {
             <div className={styles.btns}>
               <button className="button-pink  fs-48px weight-4 pointer radius-24px lh-1">
                 <span className="flex">
-                  <FaDiscord size={58} />
+                  <FaDiscord size={isBellow1000 ? 35 : 58} />
                 </span>
                 <div className="font-calli-cat-wrapper">
                   <p className="font-calli-cat">Discord</p>

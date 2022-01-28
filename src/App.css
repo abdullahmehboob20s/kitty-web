@@ -667,7 +667,7 @@ ol li {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999 !important;
+  z-index: 101 !important;
   transition: all 0.3s ease;
   opacity: 0;
   pointer-events: none;
@@ -685,4 +685,29 @@ ol li {
 .button-pink {
   background: #ffbadf;
   border: 4px solid #000000;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --fs-66px: 40px;
+    --fs-40px: 30px;
+    --fs-48px: 26px;
+    --fs-56px: 36px;
+    --fs-64px: 40px;
+    --fs-36px: 28px;
+  }
+
+  .font-winter-soraya.fs-72px {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fs-66px: 36px;
+    --fs-40px: 24px;
+    --fs-56px: 28px;
+    --fs-64px: 28px;
+    --fs-36px: 26px;
+  }
 }

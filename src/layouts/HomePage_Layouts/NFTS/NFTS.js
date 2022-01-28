@@ -57,6 +57,28 @@ function NFTS() {
                 swiper.navigation.update();
               });
             }}
+            breakpoints={{
+              1000: {
+                spaceBetween: 50,
+                slidesPerView: 4,
+              },
+              800: {
+                spaceBetween: 20,
+                slidesPerView: 4,
+              },
+              600: {
+                spaceBetween: 20,
+                slidesPerView: 3,
+              },
+              500: {
+                spaceBetween: 20,
+                slidesPerView: 2,
+              },
+              200: {
+                spaceBetween: 10,
+                slidesPerView: 1,
+              },
+            }}
           >
             <SwiperSlide>
               <img src={nft1} className="w-full" alt="" />

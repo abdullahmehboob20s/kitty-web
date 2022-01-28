@@ -12,6 +12,7 @@
 
 .content {
   max-width: 609px;
+  width: 100%;
 }
 
 .hero_kitty {
@@ -28,7 +29,8 @@
 
 .btns > button,
 .btns > a {
-  padding: 1.2rem 40px;
+  padding: 0 40px;
+  height: 100px;
   display: flex;
   align-items: center;
 }
@@ -39,4 +41,64 @@
 
 .btns > button:not(:last-child) {
   margin-right: 30px;
+}
+
+@media (max-width: 1300px) {
+  .hero_kitty {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    height: unset;
+    max-height: unset;
+
+    justify-content: unset;
+    flex-direction: column;
+    align-items: unset;
+    padding-top: 120px;
+  }
+
+  .hero_kitty {
+    position: static;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .btns > button,
+  .btns > a {
+    padding: 0 30px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    padding-top: 95px;
+  }
+
+  .btns > button,
+  .btns > a {
+    padding: 0 16px;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .btns > button:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .btns > button > span {
+    margin-right: 0.5rem;
+  }
 }

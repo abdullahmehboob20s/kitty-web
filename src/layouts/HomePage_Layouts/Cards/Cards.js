@@ -5,8 +5,10 @@ import Merchlogo from "assets/images/Merch-Logo.png";
 import Tourneyslogo from "assets/images/Tourneys-Logo.png";
 import Charitylogo from "assets/images/Charity-logo.png";
 import Alphalogo from "assets/images/Alpha-Logo.png";
+import useMediaQuery from "hooks/useMediaQuery";
 
 const Card = ({ title, img, desc }) => {
+  const isBellow760px = useMediaQuery("(max-width : 760px)");
   return (
     <div className="text-center">
       <h1 className="text-center fs-64px black weight-4 mb-30px">{title}</h1>
@@ -14,8 +16,8 @@ const Card = ({ title, img, desc }) => {
         src={img}
         style={{
           width: "100%",
-          maxWidth: "150px",
-          height: "150px",
+          maxWidth: isBellow760px ? "100px" : "150px",
+          height: isBellow760px ? "100px" : "150px",
           objectFit: "contain",
         }}
         className="mb-20px"
