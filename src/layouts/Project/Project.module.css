@@ -1,0 +1,43 @@
+.wrapper {
+  background: linear-gradient(180deg, #83fec1 0%, #ffefb7 100%);
+}
+.container {
+  display: flex;
+}
+.left {
+  margin-right: 4rem;
+  flex: 0.4;
+}
+.right {
+  flex: 1;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+}
+.stats > :not(:last-child) {
+  margin-right: 2rem;
+}
+
+.sponsers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.sponsers img {
+  width: 100%;
+}
+
+.sponsers img:nth-child(1) {
+  width: 66px;
+  height: 66px;
+}
+.sponsers img:nth-child(2) {
+  width: 68px;
+  height: 66px;
+}
+.sponsers img:nth-child(3) {
+  width: 120px;
+  height: 30px;
+}

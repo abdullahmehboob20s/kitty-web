@@ -1,0 +1,6 @@
+.wrapper {
+  background: linear-gradient(180deg, #91e8ff 0%, #83fec1 100%);
+}
+.faqs > :not(:last-child) {
+  margin-bottom: 1rem;
+}

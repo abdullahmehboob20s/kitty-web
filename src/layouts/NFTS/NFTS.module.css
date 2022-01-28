@@ -1,0 +1,10 @@
+.wrapper {
+  background: #91e8ff;
+}
+.slider {
+  display: flex;
+  align-items: center;
+}
+.slider > :not(:last-child) {
+  margin-right: 2rem;
+}

@@ -1,0 +1,8 @@
+.wrapper {
+  background: linear-gradient(180deg, #91e8ff 0%, #83fec1 100%);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
