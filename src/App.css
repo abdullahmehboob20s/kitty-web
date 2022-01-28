@@ -37,8 +37,15 @@
 }
 .font-winter-soraya {
   font-family: "font-winter-soraya";
+}
+.font-winter-soraya-wrapper {
   position: relative;
-  bottom: 0.36em;
+  /* border: 2px solid blue; */
+}
+
+.font-winter-soraya-wrapper .font-winter-soraya {
+  position: relative;
+  bottom: 0.16em;
 }
 
 @font-face {
@@ -534,6 +541,12 @@ body {
 .flex {
   display: flex;
 }
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-end {
+  justify-content: flex-end;
+}
 
 .uppercase {
   text-transform: uppercase;
@@ -623,6 +636,15 @@ ul {
 li {
   list-style: none;
   list-style-type: none;
+}
+
+ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 .bg-transparent {

@@ -1,0 +1,31 @@
+.wrapper {
+  background: linear-gradient(180deg, #ffbadf 0%, #bc87ff 100%);
+}
+.roadmap_cat {
+  width: 293px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card {
+  max-width: 373px;
+}
+.cardContent {
+  background: #ffffff;
+  border: 5px solid #000000;
+  padding: 14px 25px;
+  position: relative;
+}
+
+.Sleeping_wizard {
+  width: 130px;
+  position: absolute;
+  top: -98px;
+  right: 5px;
+}
+.gold_cat {
+  width: 100px;
+  position: absolute;
+  top: -92px;
+  right: 5px;
+}

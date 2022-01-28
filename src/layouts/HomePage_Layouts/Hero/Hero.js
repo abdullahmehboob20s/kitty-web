@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { FaDiscord } from "react-icons/fa";
 import hero_kitty from "assets/images/hero-kitty.png";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -30,11 +31,14 @@ function Hero() {
                   <p className="font-calli-cat">Discord</p>
                 </div>
               </button>
-              <button className="button-blue  fs-48px weight-4 pointer radius-24px">
+              <Link
+                to="/mint"
+                className="button-blue fs-48px weight-4 pointer radius-24px black"
+              >
                 <div className="font-calli-cat-wrapper">
                   <p className="font-calli-cat">Mint</p>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
 

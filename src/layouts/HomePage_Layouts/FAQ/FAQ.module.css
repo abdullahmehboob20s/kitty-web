@@ -1,0 +1,18 @@
+.wrapper {
+  background: linear-gradient(180deg, #91e8ff 0%, #83fec1 100%);
+}
+.faqs {
+  position: relative;
+}
+.faqs > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.Cat_playing {
+  position: absolute;
+  top: -110px;
+  left: 10px;
+  width: 190px;
+  z-index: 10;
+  pointer-events: none;
+}

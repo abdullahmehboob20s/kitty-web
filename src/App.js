@@ -1,25 +1,16 @@
 import "./App.css";
-import Hero from "layouts/Hero/Hero";
-import About from "layouts/About/About";
-import NFTS from "layouts/NFTS/NFTS";
-import Cards from "layouts/Cards/Cards";
-import Project from "layouts/Project/Project";
-import Help from "layouts/Help/Help";
-import Team from "layouts/Team/Team";
-import FAQ from "layouts/FAQ/FAQ";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "pages/HomePage/HomePage";
+import MintPage from "pages/MintPage/MintPage";
 
 function App() {
   return (
-    <div>
-      <Hero />
-      <About />
-      <NFTS />
-      <Cards />
-      <Project />
-      <Help />
-      <Team />
-      <FAQ />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/mint" element={<MintPage />} />
+      </Routes>
+    </Router>
   );
 }
 
