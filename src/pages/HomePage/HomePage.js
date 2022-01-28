@@ -24,7 +24,7 @@ function HomePage() {
       </div>
       <NFTS />
       <Cards />
-      {/* <Project />
+      <Project />
       <Help />
       <div id="roadmap">
         <Roadmap />
@@ -38,7 +38,7 @@ function HomePage() {
       <div id="story">
         <Story />
       </div>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

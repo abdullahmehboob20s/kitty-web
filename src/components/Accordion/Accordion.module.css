@@ -9,6 +9,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 26px 42px;
+  align-items: center;
 }
 
 .textWrapper {
@@ -42,4 +43,29 @@
 .accordionContent {
   padding: 26px 42px;
   padding-top: 0;
+}
+
+.textWrapper p {
+  text-align: left;
+  margin-right: 2rem;
+}
+
+@media (max-width: 760px) {
+  .textWrapper p {
+    font-size: 20px;
+  }
+
+  .accordionButton {
+    padding: 18px 24px;
+  }
+  .accordionContent {
+    padding: 18px 24px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .textWrapper p {
+    font-size: 16px;
+  }
 }

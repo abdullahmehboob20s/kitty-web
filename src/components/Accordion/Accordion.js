@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
 import styles from "./Accordion.module.css";
 import { AiOutlinePlus } from "react-icons/ai";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function Accordion({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
   const bodyRef = useRef(null);
+  const isBellow760px = useMediaQuery("(max-width : 760px)");
 
   const handler = () => {
     if (bodyRef.current.clientHeight === 0) {
@@ -29,7 +31,7 @@ function Accordion({ title, children }) {
         </div>
 
         <span className="flex">
-          <AiOutlinePlus size={40} />
+          <AiOutlinePlus size={isBellow760px ? 26 : 40} />
         </span>
       </button>
 

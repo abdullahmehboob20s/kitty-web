@@ -6,7 +6,9 @@
 }
 .left {
   margin-right: 4rem;
-  flex: 0.4;
+  /* flex: 0.4; */
+  width: 300px;
+  min-width: 300px;
 }
 .right {
   flex: 1;
@@ -14,6 +16,8 @@
 .stats {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 .stats > :not(:last-child) {
   margin-right: 2rem;
@@ -40,4 +44,49 @@
 .sponsers img:nth-child(3) {
   width: 120px;
   height: 30px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    margin-right: 0rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+
+  .stats > :not(:last-child) {
+    margin-right: 0rem;
+  }
+
+  .stats > div + div {
+    margin-left: 2rem;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .left {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .stats {
+    flex-direction: column;
+  }
+
+  .stats > div + div {
+    margin-left: 0rem;
+  }
+
+  .stats > :not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
 }

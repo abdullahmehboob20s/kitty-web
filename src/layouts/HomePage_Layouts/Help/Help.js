@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Help.module.css";
 import Sleeping_yellow from "assets/images/Sleeping-yellow.png";
+import useMediaQuery from "hooks/useMediaQuery";
 
 const Card = ({ level, desc }) => {
   return (
@@ -14,6 +15,7 @@ const Card = ({ level, desc }) => {
 };
 
 function Help() {
+  const isBellow760px = useMediaQuery("(max-width : 760px)");
   return (
     <div className={styles.wrapper}>
       <div className="py-100px">
@@ -24,7 +26,11 @@ function Help() {
 
           <div className="mb-70px">
             <div style={{ maxWidth: "915px", width: "100%", margin: "0 auto" }}>
-              <p className="font-cream-shoes fs-40px weight-5 lh-1">
+              <p
+                className={`font-cream-shoes fs-40px weight-5 lh-1 ${
+                  isBellow760px ? "text-center" : ""
+                }`}
+              >
                 Every week, our community gets to vote, win, or handpick various
                 ways to decide how we will give back to our partner shelters!
                 Some of the MANY ways we plan to give back are:

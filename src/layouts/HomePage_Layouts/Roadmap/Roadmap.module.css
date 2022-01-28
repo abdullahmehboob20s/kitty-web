@@ -29,3 +29,18 @@
   top: -92px;
   right: 5px;
 }
+
+@media (max-width: 760px) {
+  .gold_cat {
+    width: 80px;
+    top: -74px;
+  }
+  .Sleeping_wizard {
+    width: 100px;
+    top: -78px;
+  }
+
+  .roadmap_cat {
+    width: 200px;
+  }
+}

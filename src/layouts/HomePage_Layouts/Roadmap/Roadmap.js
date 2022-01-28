@@ -3,6 +3,7 @@ import styles from "./Roadmap.module.css";
 import roadmap_cat from "assets/images/roadmap-cat.png";
 import Sleeping_wizard from "assets/images/Sleeping-wizard.png";
 import gold_cat from "assets/images/gold-cat.png";
+import useMediaQuery from "hooks/useMediaQuery";
 
 const Card = ({ index, desc, toRight = false, children }) => {
   return (

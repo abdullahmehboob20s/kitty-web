@@ -23,3 +23,30 @@
 .right > :not(:last-child) {
   margin-right: 1.5rem;
 }
+
+.logo {
+  width: 449px;
+}
+
+@media (max-width: 950px) {
+  .left {
+    flex-direction: column;
+  }
+  .left button {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .right {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .logo {
+    max-width: 400px;
+    width: 95%;
+  }
+}

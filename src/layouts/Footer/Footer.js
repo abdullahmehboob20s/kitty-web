@@ -9,7 +9,7 @@ function Footer() {
       <div className="container-wrapper py-50px">
         <div className={styles.footer}>
           <div className={styles.left}>
-            <img src={logo} style={{ width: "449px" }} alt="" />
+            <img src={logo} className={styles.logo} alt="" />
             <button className="button-blue fs-36px weight-4 pointer radius-24px">
               <div className="font-calli-cat-wrapper">
                 <p className="font-calli-cat">Mint</p>

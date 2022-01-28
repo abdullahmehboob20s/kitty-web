@@ -16,12 +16,7 @@ function MintPage() {
           Public Mint
         </h1>
         <h2 className="fs-24px black weight-4 mb-20px">Unleash the kittens</h2>
-        <img
-          src={kittens}
-          style={{ maxWidth: "407px", width: "100%" }}
-          className="mb-30px"
-          alt=""
-        />
+        <img src={kittens} className={`${styles.kittens} mb-30px`} alt="" />
 
         <div className={styles.counter}>
           <button
