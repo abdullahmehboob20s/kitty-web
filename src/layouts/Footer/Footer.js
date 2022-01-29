@@ -20,7 +20,12 @@ function Footer() {
             <a href="#" className="black">
               <FaDiscord size={45} />
             </a>
-            <a href="#" className="black">
+            <a
+              className="black"
+              href="https://twitter.com/KittenClubNFT"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTwitter size={38} />
             </a>
           </div>

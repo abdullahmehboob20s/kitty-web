@@ -19,7 +19,7 @@ function Help() {
   return (
     <div className={styles.wrapper}>
       <div className="py-100px">
-        <div className="container-wrapper">
+        <div className="container-wrapper-2">
           <h1 className="text-center fs-72px weight-3 mb-15px">
             How Kitten Clubhouse Helps
           </h1>
@@ -73,7 +73,7 @@ function Help() {
           </div>
         </div>
 
-        <div className="container-wrapper">
+        <div className="container-wrapper-2">
           <img
             src={Sleeping_yellow}
             className={styles.Sleeping_yellow}

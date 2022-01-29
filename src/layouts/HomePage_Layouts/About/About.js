@@ -5,7 +5,7 @@ import kittens from "assets/images/kittens.png";
 function About() {
   return (
     <div className={styles.wrapper}>
-      <div className="container-wrapper py-100px">
+      <div className="container-wrapper-2 py-100px">
         <div className={styles.container}>
           <div className={styles.left}>
             <h1 className="white fs-66px weight-4 mb-20px">

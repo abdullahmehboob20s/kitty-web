@@ -33,7 +33,7 @@ function NFTS() {
   const navigationNextRef = useRef(null);
   return (
     <div className={styles.wrapper}>
-      <div className="container-wrapper py-100px">
+      <div className="container-wrapper-2 py-100px">
         <h1 className="font-cream-shoes fs-56px black weight-5 text-center mb-35px">
           Your one-of-a-kind Kitten Clubhouse NFT
         </h1>

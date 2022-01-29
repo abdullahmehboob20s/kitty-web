@@ -26,7 +26,7 @@ function Hero() {
             </div>
 
             <div className={styles.btns}>
-              <button className="button-pink  fs-48px weight-4 pointer radius-24px lh-1">
+              <button className="button-pink  fs-48px weight-4 pointer radius-26px lh-1">
                 <span className="flex">
                   <FaDiscord size={isBellow1000 ? 35 : 58} />
                 </span>
@@ -36,7 +36,7 @@ function Hero() {
               </button>
               <Link
                 to="/mint"
-                className="button-blue fs-48px weight-4 pointer radius-24px black"
+                className="button-blue fs-48px weight-4 pointer radius-26px black"
               >
                 <div className="font-calli-cat-wrapper">
                   <p className="font-calli-cat">Mint</p>

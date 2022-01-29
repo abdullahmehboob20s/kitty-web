@@ -9,7 +9,7 @@ import Charitylogo from "assets/images/Charity-Navigator.jpg";
 function Project() {
   return (
     <div className={styles.wrapper}>
-      <div className="container-wrapper py-100px">
+      <div className="container-wrapper-2 py-100px">
         <h1 className="text-center fs-80px mb-50px weight-4">
           A Project for Good
         </h1>

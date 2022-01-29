@@ -31,7 +31,7 @@ const Card = ({ title, img, desc }) => {
 function Cards() {
   return (
     <div className={styles.wrapper}>
-      <div className="container-wrapper py-100px">
+      <div className="container-wrapper-2 py-100px">
         <div className={styles.cards}>
           <Card
             title="Charity"

@@ -6,7 +6,7 @@ import Cat_playing from "assets/images/Cat-playing.png";
 function FAQ() {
   return (
     <div className={styles.wrapper}>
-      <div className="container-wrapper py-100px">
+      <div className="container-wrapper-2 py-100px">
         <h1 className="text-center fs-72px black weight-4 mb-40px">FAQs</h1>
 
         <div className={styles.faqs}>

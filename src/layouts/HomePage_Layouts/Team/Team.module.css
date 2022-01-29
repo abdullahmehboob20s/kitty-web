@@ -27,6 +27,12 @@
   flex: 1;
 }
 
+@media (max-width: 1440px) {
+  .cards {
+    gap: 3rem 1rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);

@@ -4,9 +4,11 @@
 }
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   gap: 3rem;
+  justify-content: center;
 }
+
 .card {
   display: flex;
   align-items: center;

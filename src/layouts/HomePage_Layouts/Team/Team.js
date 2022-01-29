@@ -33,7 +33,7 @@ const Card = ({ img, heading, title, desc, bgColor, headingBgColor }) => {
 function Team() {
   return (
     <div className={styles.wrapper}>
-      <div className="container-wrapper py-100px">
+      <div className="container-wrapper-2 py-100px">
         <h1 className="text-center white fs-72px weight-4 mb-60px">Team</h1>
 
         <div className={styles.cards}>

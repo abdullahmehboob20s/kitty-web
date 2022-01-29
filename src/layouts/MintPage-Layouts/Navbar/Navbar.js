@@ -4,6 +4,7 @@ import logo from "assets/images/logo.png";
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import useMediaQuery from "hooks/useMediaQuery";
 import { HiLink } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const isBellow760px = useMediaQuery("(max-width : 760px)");
@@ -13,7 +14,12 @@ function Navbar() {
       <div className="container-wrapper">
         <div className={styles.navbar}>
           <div className={styles.socialLinks}>
-            <a href="#" className="white flex">
+            <a
+              className="white flex"
+              href="https://twitter.com/KittenClubNFT"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTwitter size={isBellow760px ? 30 : 40} />
             </a>
             <a href="#" className="white flex">
@@ -21,7 +27,9 @@ function Navbar() {
             </a>
           </div>
           <div className={styles.center}>
-            <img src={logo} className={styles.logo} alt="" />
+            <Link to="/" className="flex">
+              <img src={logo} className={styles.logo} alt="" />
+            </Link>
           </div>
           <div className={styles.btns}>
             <button
