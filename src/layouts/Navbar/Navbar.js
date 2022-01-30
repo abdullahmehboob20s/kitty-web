@@ -34,6 +34,7 @@ function Navbar() {
             ref={menuRef}
           >
             <ScrollLink
+              onClick={() => setShow(false)}
               offset={-30}
               to="about"
               className="font-winter-soraya-wrapper flex w-fit-content pointer"
@@ -41,6 +42,7 @@ function Navbar() {
               <p className="font-winter-soraya fs-72px white">About</p>
             </ScrollLink>
             <ScrollLink
+              onClick={() => setShow(false)}
               offset={-30}
               to="roadmap"
               className="font-winter-soraya-wrapper flex w-fit-content pointer"
@@ -48,6 +50,7 @@ function Navbar() {
               <p className="font-winter-soraya fs-72px white">Roadmap</p>
             </ScrollLink>
             <ScrollLink
+              onClick={() => setShow(false)}
               offset={-30}
               to="team"
               className="font-winter-soraya-wrapper flex w-fit-content pointer"
@@ -55,6 +58,7 @@ function Navbar() {
               <p className="font-winter-soraya fs-72px white">Team</p>
             </ScrollLink>
             <ScrollLink
+              onClick={() => setShow(false)}
               offset={-30}
               to="faq"
               className="font-winter-soraya-wrapper flex w-fit-content pointer"
@@ -62,6 +66,7 @@ function Navbar() {
               <p className="font-winter-soraya fs-72px white">FAQ</p>
             </ScrollLink>
             <ScrollLink
+              onClick={() => setShow(false)}
               offset={-30}
               to="story"
               className="font-winter-soraya-wrapper flex w-fit-content pointer"
@@ -74,16 +79,28 @@ function Navbar() {
             </button>
 
             <div className={styles.mobileSocialLinks}>
-              <a href="#" className="black flex">
+              <a
+                onClick={() => setShow(false)}
+                href="https://twitter.com/KittenClubNFT"
+                target="_blank"
+                rel="noreferrer"
+                className="black flex"
+              >
                 <FaTwitter size={35} />
               </a>
-              <a href="#" className="black flex">
+              <a onClick={() => setShow(false)} href="#" className="black flex">
                 <FaDiscord size={40} />
               </a>
-              <a href="#" className="black flex">
+              <a onClick={() => setShow(false)} href="#" className="black flex">
                 <img src={opensea_icon} style={{ width: "35px" }} alt="" />
               </a>
-              <a href="#" className="black flex">
+              <a
+                onClick={() => setShow(false)}
+                href="https://www.twitch.tv/kittenclubhousenft"
+                target="_blank"
+                rel="noreferrer"
+                className="black flex"
+              >
                 <FaTwitch size={30} />
               </a>
             </div>
