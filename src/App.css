@@ -698,6 +698,7 @@ ol li {
     --fs-72px: 52px;
     --fs-28px: 22px;
     --fs-18px: 16px;
+    --fs-46px: 40px;
   }
 }
 
@@ -736,6 +737,7 @@ ol li {
     --fs-80px: 40px;
     --fs-28px: 20px;
     --fs-18px: 16px;
+    --fs-46px: 30px;
   }
 
   .py-50px {

@@ -32,7 +32,7 @@ function MintPage() {
             <BsPlusLg size={30} />
           </button>
         </div>
-        <p className="fs-64px weight-4 black font-kids-daday mb-20px">
+        <p className="fs-64px weight-6 black font-kids-daday  mb-20px">
           {counter}/10000
         </p>
 

@@ -7,8 +7,17 @@
   display: flex;
 }
 
+.cards {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .card {
   max-width: 373px;
+}
+.card:not(:first-child) {
+  margin-top: -80px;
 }
 .cardContent {
   background: #ffffff;
@@ -28,6 +37,12 @@
   position: absolute;
   top: -92px;
   right: 5px;
+}
+
+@media (max-width: 900px) {
+  .card:not(:first-child) {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 760px) {

@@ -9,9 +9,10 @@ import useMediaQuery from "hooks/useMediaQuery";
 
 const Card = ({ title, img, desc }) => {
   const isBellow760px = useMediaQuery("(max-width : 760px)");
+
   return (
     <div className="text-center">
-      <h1 className="text-center fs-64px black weight-4 mb-30px">{title}</h1>
+      <h1 className="text-center fs-46px black weight-4 mb-30px">{title}</h1>
       <img
         src={img}
         style={{

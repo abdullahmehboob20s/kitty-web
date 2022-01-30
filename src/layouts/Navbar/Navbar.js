@@ -99,15 +99,15 @@ function Navbar() {
                   rel="noreferrer"
                   className="white flex"
                 >
-                  <FaTwitter size={isBellow1000 ? 25 : 40} />
+                  <FaTwitter size={isBellow1000 ? 25 : 30} />
                 </a>
                 <a href="#" className="white flex">
-                  <FaDiscord size={isBellow1000 ? 30 : 45} />
+                  <FaDiscord size={isBellow1000 ? 30 : 35} />
                 </a>
                 <a href="#" className="white flex">
                   <img
                     src={opensea_icon}
-                    style={{ width: isBellow1000 ? "25px" : "40px" }}
+                    style={{ width: isBellow1000 ? "25px" : "30px" }}
                     alt=""
                   />
                 </a>
@@ -117,7 +117,7 @@ function Navbar() {
                   rel="noreferrer"
                   className="white flex"
                 >
-                  <FaTwitch size={isBellow1000 ? 25 : 35} />
+                  <FaTwitch size={isBellow1000 ? 25 : 25} />
                 </a>
               </>
             )}

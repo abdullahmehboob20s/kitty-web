@@ -22,7 +22,7 @@ function Roadmap() {
     <div className={styles.wrapper}>
       <div className="container-wrapper-2 py-100px">
         <h1 className="fs-72px text-center black weight-4 mb-50px">Roadmap</h1>
-        <div className="mb-50px">
+        <div className="mb-20px">
           <img src={roadmap_cat} className={styles.roadmap_cat} alt="" />
         </div>
 

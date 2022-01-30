@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 import logo from "assets/images/logo.png";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -10,11 +11,14 @@ function Footer() {
         <div className={styles.footer}>
           <div className={styles.left}>
             <img src={logo} className={styles.logo} alt="" />
-            <button className="button-blue fs-36px weight-4 pointer radius-24px">
+            <Link
+              to="/mint"
+              className="black button-blue fs-36px weight-4 pointer radius-24px"
+            >
               <div className="font-calli-cat-wrapper">
                 <p className="font-calli-cat">Mint</p>
               </div>
-            </button>
+            </Link>
           </div>
           <div className={styles.right}>
             <a href="#" className="black">
