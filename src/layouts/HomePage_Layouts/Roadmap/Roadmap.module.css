@@ -1,10 +1,27 @@
 .wrapper {
   background: linear-gradient(180deg, #ffbadf 0%, #bc87ff 100%);
+  z-index: 10;
 }
+
+.roadmapTITLE {
+  margin-bottom: 30%;
+}
+
 .roadmap_cat {
   width: 293px;
   margin: 0 auto;
   display: flex;
+  margin-top: 20px;
+  display: none;
+}
+.roadmapGIF {
+  position: absolute;
+  top: 6%;
+  left: 0%;
+  width: 90%;
+  height: 90%;
+  z-index: -1;
+  object-fit: contain;
 }
 
 .cards {
@@ -37,6 +54,18 @@
   position: absolute;
   top: -92px;
   right: 5px;
+}
+
+@media (max-width: 1000px) {
+  .roadmap_cat {
+    display: flex;
+  }
+  .roadmapGIF {
+    display: none;
+  }
+  .roadmapTITLE {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 900px) {

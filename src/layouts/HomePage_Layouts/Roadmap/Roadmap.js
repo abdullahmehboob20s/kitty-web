@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./Roadmap.module.css";
-import roadmap_cat from "assets/images/roadmap-cat.png";
 import Sleeping_wizard from "assets/images/Sleeping-wizard.png";
 import gold_cat from "assets/images/gold-cat.png";
 import useMediaQuery from "hooks/useMediaQuery";
+
+import roadmap_cat from "assets/images/roadmap-cat.png";
+import roadmap_catGIF from "assets/images/Throwing-up kitten.gif";
 
 const Card = ({ index, desc, toRight = false, children }) => {
   return (
@@ -20,11 +22,17 @@ const Card = ({ index, desc, toRight = false, children }) => {
 function Roadmap() {
   return (
     <div className={styles.wrapper}>
-      <div className="container-wrapper-2 py-100px">
-        <h1 className="fs-72px text-center black weight-4 mb-50px">Roadmap</h1>
-        <div className="mb-20px">
-          <img src={roadmap_cat} className={styles.roadmap_cat} alt="" />
-        </div>
+      <div
+        className="container-wrapper-2 py-100px relative"
+        style={{ zIndex: 10 }}
+      >
+        <h1
+          className={`${styles.roadmapTITLE} fs-72px text-center black weight-4 `}
+        >
+          Roadmap
+        </h1>
+        <img src={roadmap_cat} className={styles.roadmap_cat} alt="" />
+        <img src={roadmap_catGIF} className={styles.roadmapGIF} alt="" />
 
         <div className={styles.cards}>
           <Card

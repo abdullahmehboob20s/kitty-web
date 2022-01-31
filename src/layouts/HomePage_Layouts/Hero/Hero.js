@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import { FaDiscord } from "react-icons/fa";
-import hero_kitty from "assets/images/hero-kitty.png";
 import { Link } from "react-router-dom";
 import useMediaQuery from "hooks/useMediaQuery";
+import hero_kitty from "assets/images/Pawing-kitten.gif";
 
 function Hero() {
   const isBellow1000 = useMediaQuery("(max-width:1000px)");
