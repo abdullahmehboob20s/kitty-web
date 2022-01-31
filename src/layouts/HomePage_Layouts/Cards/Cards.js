@@ -7,7 +7,7 @@ import Charitylogo from "assets/images/Charity-logo.png";
 import Alphalogo from "assets/images/Alpha-Logo.png";
 import useMediaQuery from "hooks/useMediaQuery";
 
-const Card = ({ title, img, desc }) => {
+const Card = ({ title, img, desc, descFontSize = "fs-36px" }) => {
   const isBellow760px = useMediaQuery("(max-width : 760px)");
 
   return (
@@ -24,7 +24,9 @@ const Card = ({ title, img, desc }) => {
         className="mb-20px"
         alt=""
       />
-      <p className="text-center fs-36px weight-5 font-cream-shoes">{desc}</p>
+      <p className={`text-center ${descFontSize} weight-5 font-cream-shoes`}>
+        {desc}
+      </p>
     </div>
   );
 };
@@ -53,6 +55,7 @@ function Cards() {
             title="Alpha"
             img={Alphalogo}
             desc="Your ticket into a community built to help each other innovate and build their own projects on web3, and to also help guide each other through the NFT/crypto journey.. Everyone eats."
+            descFontSize="fs-28px"
           />
         </div>
       </div>

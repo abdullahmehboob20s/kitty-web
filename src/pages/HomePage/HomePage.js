@@ -22,7 +22,7 @@ function HomePage() {
       <div id="about">
         <About />
       </div>
-      {/* <NFTS /> */}
+      <NFTS />
       <Cards />
       <Project />
       <Help />

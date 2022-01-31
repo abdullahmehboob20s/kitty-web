@@ -276,7 +276,7 @@ function Story() {
                 reality, and we’d love to have you join us along in our
                 fun-filled journey with Kitten Clubhouse 🚀🚀🚀
               </p>
-              <p className="font-cream-shoes fs-38px weight-5 mb-50px lh-1">
+              {/* <p className="font-cream-shoes fs-38px weight-5 mb-50px lh-1">
                 It all started with three dudes. Three dudes fresh out of
                 undergrad, and yup, you guessed it, all business majors covering
                 areas such as social media marketing, product strategy,
@@ -341,7 +341,7 @@ function Story() {
                   part of this project. Individuals that we are so grateful for
                   that excel and have tons of experience in solidity{" "}
                 </li>
-              </ul>
+              </ul> */}
             </div>
           ) : (
             ""
